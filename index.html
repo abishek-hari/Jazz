@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAZZ</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="home-section">
+      <audio src="" id="audio-source"></audio>
+      <!-- carousel -->
+      <div class="carousel">
+        <img src="assets/images//cover 1.png" class="active" alt="pic" />
+        <img src="assets/images//cover 2.png" alt="pic" />
+        <img src="assets/images//cover 3.png" alt="pic" />
+        <img src="assets/images//cover 4.png" alt="pic" />
+        <img src="assets/images//cover 5.png" alt="pic" />
+      </div>
+
+      <!-- playlists -->
+      <h1 class="heading">recently played</h1>
+      <div class="playlists-group">
+        <div class="playlist-card">
+          <img
+            src="assets/images/cover 9.png"
+            class="playlist-card-img"
+            alt="pic"
+          />
+          <p class="playlist-card-name">top international</p>
+        </div>
+        <div class="playlist-card">
+          <img
+            src="assets/images/cover 2.png"
+            class="playlist-card-img"
+            alt="pic"
+          />
+          <p class="playlist-card-name">BTS collections</p>
+        </div>
+        <div class="playlist-card">
+          <img
+            src="assets/images/cover 10.png"
+            class="playlist-card-img"
+            alt="pic"
+          />
+          <p class="playlist-card-name">hollywood hits</p>
+        </div>
+        <div class="playlist-card">
+          <img
+            src="assets/images/cover 11.png"
+            class="playlist-card-img"
+            alt="pic"
+          />
+          <p class="playlist-card-name">top 50</p>
+        </div>
+        <div class="playlist-card">
+          <img
+            src="assets/images/cover 5.png"
+            class="playlist-card-img"
+            alt="pic"
+          />
+          <p class="playlist-card-name">justin beiber</p>
+        </div>
+      </div>
+
+      <h1 class="heading">based on your listening</h1>
+      <div class="playlists-group">
+        <div class="playlist-card">
+          <img
+            src="assets/images/cover 11.png"
+            class="playlist-card-img"
+            alt="pic"
+          />
+          <p class="playlist-card-name">daily mix 1</p>
+        </div>
+        <div class="playlist-card">
+          <img
+            src="assets/images/cover 12.png"
+            class="playlist-card-img"
+            alt="pic"
+          />
+          <p class="playlist-card-name">bollywood hits</p>
+        </div>
+        <div class="playlist-card">
+          <img
+            src="assets/images/cover 13.png"
+            class="playlist-card-img"
+            alt="pic"
+          />
+          <p class="playlist-card-name">kollywood vibes</p>
+        </div>
+        <div class="playlist-card">
+          <img
+            src="assets/images/cover 1.png"
+            class="playlist-card-img"
+            alt="pic"
+          />
+          <p class="playlist-card-name">trending now</p>
+        </div>
+        <div class="playlist-card">
+          <img
+            src="assets/images/cover 3.png"
+            class="playlist-card-img"
+            alt="pic"
+          />
+          <p class="playlist-card-name">hollywood hits</p>
+        </div>
+      </div>
+
+      <h1 class="heading">best of artists</h1>
+      <div class="playlists-group">
+        <div class="playlist-card">
+          <img
+            src="assets/images/cover 2.png"
+            class="playlist-card-img"
+            alt="pic"
+          />
+          <p class="playlist-card-name">A.R. Rahman</p>
+        </div>
+        <div class="playlist-card">
+          <img
+            src="assets/images/cover 7.png"
+            class="playlist-card-img"
+            alt="pic"
+          />
+          <p class="playlist-card-name">harris jayaraj</p>
+        </div>
+        <div class="playlist-card">
+          <img
+            src="assets/images/cover 5.png"
+            class="playlist-card-img"
+            alt="pic"
+          />
+          <p class="playlist-card-name">anirudh ravichander</p>
+        </div>
+        <div class="playlist-card">
+          <img
+            src="assets/images/cover 13.png"
+            class="playlist-card-img"
+            alt="pic"
+          />
+          <p class="playlist-card-name">sid sriram</p>
+        </div>
+        <div class="playlist-card">
+          <img
+            src="assets/images/cover 4.png"
+            class="playlist-card-img"
+            alt="pic"
+          />
+          <p class="playlist-card-name">yuvanshankar raja</p>
+        </div>
+      </div>
+
+      <!-- music player section -->
+
+      <section class="music-player-section">
+        <img src="assets/images/back.png" class="back-btn icon hide" alt="" />
+        <img src="assets/images/nav.png" class="nav-btn icon hide" alt="" />
+        <h3 class="current-song-name">song 1</h3>
+        <p class="artist-name hide">artist 1</p>
+        <img src="assets/images/cover 1.png" class="cover hide" alt="pic" />
+        <div class="seek-bar-container">
+          <input type="range" class="music-seek-bar" value="0" />
+          <p class="current-time hide">00 : 00</p>
+          <p class="duration hide">00 : 00</p>
+        </div>
+        <div class="controls">
+          <span class="fa-solid fa-rotate-right" id="repeat"></span>
+          <div class="main">
+            <i class="fa-solid fa-backward active" id="backward"></i>
+            <i class="fa-solid fa-play active" id="play"></i>
+            <i class="fa-solid fa-pause" id="pause"></i>
+            <i class="fa-solid fa-forward active" id="forward"></i>
+          </div>
+          <input
+            type="range"
+            class="volume-slider"
+            max="1"
+            value="1"
+            step="0.1"
+          />
+          <span class="fa-solid fa-volume-high" id="volume"></span>
+        </div>
+      </section>
+
+      <!-- playlist -->
+
+      <section class="playlist">
+        <img src="assets/images/back.png" class="back-btn icon hide" alt="" />
+        <h1 class="title">playlist</h1>
+        <div class="queue active">
+          <div class="queue-cover">
+            <img src="assets/images/puspa.jpg" alt="" />
+            <i class="fa-solid fa-pause"></i>
+          </div>
+          <p class="name">saami saami</p>
+        </div>
+        <div class="queue">
+          <div class="queue-cover">
+            <img src="assets/images/beast.jpg" alt="" />
+            <i class="fa-solid fa-pause"></i>
+          </div>
+          <p class="name">arabic kuthu</p>
+        </div>
+        <div class="queue">
+          <div class="queue-cover">
+            <img src="assets/images/cover 14.jpg" alt="" />
+            <i class="fa-solid fa-pause"></i>
+          </div>
+          <p class="name">megham karukatha</p>
+        </div>
+        <div class="queue">
+          <div class="queue-cover">
+            <img src="assets/images/viruman.jpg" alt="" />
+            <i class="fa-solid fa-pause"></i>
+          </div>
+          <p class="name">kanja poovu kannala</p>
+        </div>
+        <div class="queue">
+          <div class="queue-cover">
+            <img src="assets/images/Vikram.jpg" alt="" />
+            <i class="fa-solid fa-pause"></i>
+          </div>
+          <p class="name">pathala pathala</p>
+        </div>
+        <div class="queue">
+          <div class="queue-cover">
+            <img src="assets/images/puspa.jpg" alt="" />
+            <i class="fa-solid fa-pause"></i>
+          </div>
+          <p class="name">srivalli</p>
+        </div>
+        <div class="queue">
+          <div class="queue-cover">
+            <img src="assets/images/cover 14.jpg" alt="" />
+            <i class="fa-solid fa-pause"></i>
+          </div>
+          <p class="name">Thaai Kelavi</p>
+        </div>
+        <div class="queue">
+          <div class="queue-cover">
+            <img src="assets/images/cover 14.jpg" alt="" />
+            <i class="fa-solid fa-pause"></i>
+          </div>
+          <p class="name">Thenmozhi</p>
+        </div>
+      </section>
+    </section>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
